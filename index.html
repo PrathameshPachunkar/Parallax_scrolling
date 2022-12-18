@@ -22,8 +22,41 @@
         <img src="moon.png" id="moon">
         <img src="mountains_behind.png" id="behind">
         <h2 id="text">MOON LIGHT</h2>
-        <a href="#"id="btn">Explore</a>
+        <a href="#sec"id="btn">Explore</a>
         <img src="mountains_front.png" id="front">
     </section>
+    <div class="sec" id="sec">
+        <h2>Effect of Prallox Scrolling</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, id quod explicabo eveniet cupiditate quam quisquam facilis quas deleniti minus recusandae aspernatur qui dolorem iure sed vel. Eaque, in aliquid!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi officia atque voluptates mollitia culpa impedit iste nesciunt consequuntur minima ab, autem id suscipit aut ut, officiis, accusantium eius assumenda. Culpa?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illum debitis maxime at ducimus animi exercitationem natus, alias nobis porro dolore id doloribus eius excepturi. Minima quae mollitia ex! Veniam?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. A nulla debitis aliquam unde cum voluptates quos quisquam sed in doloribus. Commodi eum nesciunt eius odit id blanditiis iure delectus dolorem, soluta accusamus, dolores quia quam provident saepe deserunt magnam, asperiores veritatis corrupti. Molestiae nulla quisquam mollitia illo omnis quasi tenetur!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae fuga, magnam nisi ex dicta a ullam ad vel quia repellat nulla rem repellendus? Asperiores hic nobis neque? Nulla, nam quam <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, id quod explicabo eveniet cupiditate quam quisquam facilis quas deleniti minus recusandae aspernatur qui dolorem iure sed vel. Eaque, in aliquid!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi officia atque voluptates mollitia culpa impedit iste nesciunt consequuntur minima ab, autem id suscipit aut ut, officiis, accusantium eius assumenda. Culpa?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illum debitis maxime at ducimus animi exercitationem natus, alias nobis porro dolore id doloribus eius excepturi. Minima quae mollitia ex! Veniam?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. A nulla debitis aliquam unde cum voluptates quos quisquam sed in doloribus. Commodi eum nesciunt eius odit id blanditiis iure delectus dolorem, soluta accusamus, dolores quia quam provident saepe deserunt magnam, asperiores veritatis corrupti. Molestiae nulla quisquam mollitia illo omnis quasi tenetur!
+           <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, id quod explicabo eveniet cupiditate quam quisquam facilis quas deleniti minus recusandae aspernatur qui dolorem iure sed vel. Eaque, in aliquid!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi officia atque voluptates mollitia culpa impedit iste nesciunt consequuntur minima ab, autem id suscipit aut ut, officiis, accusantium eius assumenda. Culpa?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis illum debitis maxime at ducimus animi exercitationem natus, alias nobis porro dolore id doloribus eius excepturi. Minima quae mollitia ex! Veniam?
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. A nulla debitis aliquam unde cum voluptates quos quisquam sed in doloribus. Commodi eum nesciunt eius odit id blanditiis iure delectus dolorem, soluta accusamus, dolores quia quam provident saepe deserunt magnam, asperiores veritatis corrupti. Molestiae nulla quisquam mollitia illo omnis quasi tenetur!
+        </p>
+    </div>
+    <script>
+        let moon = document.getElementById('moon');
+        let stars = document.getElementById('stars');
+        let btn = document.getElementById('btn');
+        let front = document.getElementById('front');
+        let behind = document.getElementById('behind');
+        let text = document.getElementById('text');
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+            stars.style.left = value*0.25 + 'px';
+            moon.style.top = value*1.025 + 'px';
+            front.style.top = value*0 + 'px';
+            behind.style.top = value*0.5 + 'px';
+            text.style.marginRight = value*4 + 'px';
+            
+        })
+    </script>
 </body>
 </html>
